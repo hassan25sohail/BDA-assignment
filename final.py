@@ -6,7 +6,6 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 import Tkinter as Tk
 
-
 class GUI:
    root = Tk.Tk()
    root.wm_title("Big data analysis assignment")
