@@ -37,7 +37,7 @@ class MyStreamListener(tweepy.StreamListener):
 
                 list=[usr_name,text,mentioned_users,hash,url,usr_folower,analysis,tweet_retweeted,tweet_createdat,self.keyword,self.location]
                 cur = db.cursor()
-                sql="INSERT INTO `tweets` (`user`, `tweet`,`mentions`, `hashtags`, `urls`,`followers`, `retweet`, `createdat`, `keyword`, `location`) VALUES ('{}','\{}\','{}','{}','{}',{},{},{},'{}','{}');"\
+                sql="INSERT INTO `tweets` (`user`, `tweet`,`mentions`, `hashtags`, `urls`,`followers`, `retweet`, `createdat`,`location`,`keyword`) VALUES ('{}','\{}\','{}','{}','{}',{},{},{},'{}','{}');"\
                     .format(list[0],list[1].encode('ascii', 'ignore').decode('ascii'),
                             list[2],list[3],list[4],list[5],list[6]
                             ,list[7],list[8],list[9])
