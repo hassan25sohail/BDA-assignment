@@ -21,8 +21,8 @@ class GUI:
       a = f.add_subplot(111)
       x=insertTweets().tweets(self.keyword,self.location)
       print x
-      result = self.DBC.fetch_db("SELECT * FROM tweets WHERE keywords ='"+self.keyword+"'" )
-      print result[0]
+      #result = self.DBC.fetch_db("SELECT * FROM tweets WHERE keywords ='"+self.keyword+"'" )
+      #print result[0]
 
       t=[1,2,3,-2,6]
       s=[1,2,3,4,6]
